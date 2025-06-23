@@ -123,8 +123,11 @@ CREATE TABLE IF NOT EXISTS benches (
     FOREIGN KEY (fid_river_banks) REFERENCES river_banks(fid)
 );
 
+ALTER TABLE tree_species
+DROP COLUMN healthy;
 
-
+ALTER TABLE type_landuse
+DROP COLUMN building_nr;
 
 
 
